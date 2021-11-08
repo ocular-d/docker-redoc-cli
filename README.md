@@ -15,9 +15,12 @@
 ## 📄 About
 
 Redoc CLI in a container
+
 ## 🚀 Getting Started
 
-TBC.
+```shell
+docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli bundle spec/openapi.json -o spec/pet-store.html
+```
 
 ## 🤝 Contributing
 
