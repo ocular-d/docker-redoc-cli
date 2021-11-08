@@ -1,0 +1,13 @@
+.git
+.gitignore
+.github
+.vale.ini
+.vscode
+README.md
+CHANGELOG.md
+Makefile
+LICENSE
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log

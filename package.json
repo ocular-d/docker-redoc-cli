@@ -1,0 +1,11 @@
+{
+  "name": "docker-redoc-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "ocular-d",
+  "license": "MIT",
+  "dependencies": {
+    "redoc-cli": "^0.13.0"
+  }
+}
