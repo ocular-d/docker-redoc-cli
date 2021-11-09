@@ -1,0 +1,7 @@
+contact_links:
+
+  - name: Question
+
+    url: https://github.com/ocular-d/docker-redoc-cli/discussions/new
+
+    about: Ask a question about usage of this project
