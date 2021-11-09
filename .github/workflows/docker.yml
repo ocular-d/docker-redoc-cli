@@ -1,0 +1,29 @@
+name: Validate Dockerfile
+
+on:
+  push:
+    paths:
+      - "Dockerfile"
+
+jobs:
+  hadolint:
+    name: hadolint
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Running hadolint
+        uses: brpaz/hadolint-action@master
+        with:
+          dockerfile: "Dockerfile"
+
+  conftest:
+    name: conftest
+    needs: hadolint
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Running conftest
+      uses: b4b4r07/action-conftest@master
+      with:
+        files: Dockerfile
+        policy: .github/conftest.rego
