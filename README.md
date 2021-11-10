@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [About the Project](#📄-about)
-- [Getting Started](#🚀-getting-started)
+- [Usage](#🚀-usage)
 - [Contributing](#🤝-contributing)
 - [License](#📝-license)
 - [Credits](#🙏-credits)
@@ -16,7 +16,26 @@
 
 [Redoc](https://github.com/Redocly/redoc) CLI in a container
 
-## 🚀 Getting Started
+## 🚀 Usage
+
+```shell
+docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli --help
+Commands:
+  redoc-cli serve <spec>   start the server
+  redoc-cli bundle <spec>  bundle spec into zero-dependency HTML-file
+
+Options:
+      --help             Show help                                     [boolean]
+      --version          Show version number                           [boolean]
+  -t, --template         Path to handlebars page template, see
+                         https://git.io/vh8fP for the example           [string]
+      --templateOptions  Additional options that you want pass to template. Use
+                         dot notation, e.g. templateOptions.metaDescription
+      --options          ReDoc options, use dot notation, e.g.
+                         options.nativeScrollbars
+```
+
+### Bundle OAS to HTML
 
 ```shell
 docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli bundle spec/openapi.json -o spec/pet-store.html
