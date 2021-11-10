@@ -14,7 +14,7 @@
 
 ## 📄 About
 
-Redoc CLI in a container
+[Redoc](https://github.com/Redocly/redoc) CLI in a container
 
 ## 🚀 Getting Started
 
@@ -26,7 +26,8 @@ docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli bundle spec/open
 
 We are a community effort, and everybody is most welcome to participate!
 
-Be it filing bugs, formulating enhancements, creating pull requests, or any other means of contribution, we encourage contributions from everyone.
+Be it filing bugs, formulating enhancements, creating pull requests, or any other means of contribution,
+we encourage contributions from everyone.
 
 ## 📝 License
 
