@@ -2,21 +2,24 @@
 
 # Docker Redoc CLI
 
+[Overview](#overview)
+•
+[Usage](#usage)
+
 </div>
 
 ## Table of Contents
 
-- [About the Project](#📄-about)
-- [Usage](#🚀-usage)
-- [Contributing](#🤝-contributing)
-- [License](#📝-license)
-- [Credits](#🙏-credits)
+- [Overview](#overview)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 📄 About
+## Overview
 
 [Redoc](https://github.com/Redocly/redoc) CLI in a container
 
-## 🚀 Usage
+## Usage
 
 ```shell
 docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli --help
@@ -41,13 +44,13 @@ Options:
 docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli bundle spec/openapi.json -o spec/pet-store.html
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We are a community effort, and everybody is most welcome to participate!
 
 Be it filing bugs, formulating enhancements, creating pull requests, or any other means of contribution,
 we encourage contributions from everyone.
 
-## 📝 License
+## License
 
 Distributed under the [MIT](https://choosealicense.com/licenses/mit/ "Link to MIT license") license.

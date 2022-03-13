@@ -1,5 +1,5 @@
 # ---- Base Node ----
-FROM node:lts-alpine3.14
+FROM node:lts-alpine3.15
 LABEL maintainer "Sven<sven@ocular-d.tech>"
 
 # hadolint ignore=DL3018
@@ -16,4 +16,3 @@ RUN npm install \
 
 ENTRYPOINT ["./node_modules/.bin/redoc-cli"]
 CMD []
-
