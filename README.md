@@ -22,7 +22,7 @@
 ## Usage
 
 ```shell
-docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli --help
+docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli:0.13.20 --help
 Commands:
   redoc-cli serve <spec>   start the server
   redoc-cli bundle <spec>  bundle spec into zero-dependency HTML-file
@@ -41,7 +41,7 @@ Options:
 ### Bundle OAS to HTML
 
 ```shell
-docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli bundle spec/openapi.json -o spec/pet-store.html
+docker run -it -v "$(pwd)"/spec:/app/spec testthedocs/redoc-cli:0.13.20 build spec/openapi.json -o spec/pet-store.html
 ```
 
 ## Contributing
